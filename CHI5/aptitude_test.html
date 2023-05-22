@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aptitude Test</title>
+</head>
+<body>
+    <h1>Aptitude Test</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+```
+
+**thank_you.html (template):**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>Thank you for completing the Aptitude Test.</p>
+</body>
+</html>
